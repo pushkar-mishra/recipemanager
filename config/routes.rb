@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get '/home', to: "pages#home"
+  get '/', to: "pages#home"
 end
