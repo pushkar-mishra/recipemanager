@@ -1,5 +1,5 @@
 <p>
-  <h1 class = 'center'><%= @recipe.name %></h1>
+  <h1><%= @recipe.name %></h1>
 </p>
 </hr>
 <div class='row'>
@@ -9,10 +9,11 @@
         <h5>Brought to you by: <%= @recipe.chef.chefname %></h5>
       </section>
   </div>
-  
+    
     <div class='col-md-8 center'>
-      <h1><%= @recipe.summary %> </h1>
-      <div class='well'><%= @recipe.description %> </div>
+      <%= link_to "Edit this Recipe",edit_recipe_path, class: "btn btn-success pull-right" %>
+      <h3><%= @recipe.summary %> </h3>
+      <div class='well'><%= simple_format(@recipe.description) %> </div>
     </div>
 </div>
 
