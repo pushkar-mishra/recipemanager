@@ -1,0 +1,19 @@
+<p>
+  <h1 class = 'center'><%= @recipe.name %></h1>
+</p>
+</hr>
+<div class='row'>
+  <div class='col-md-4 pull-right center'>
+    <section class='chef_info center'>
+        <%= gravatar_for @recipe.chef, size: 100 %>
+        <h5>Brought to you by: <%= @recipe.chef.chefname %></h5>
+      </section>
+  </div>
+  
+    <div class='col-md-8 center'>
+      <h1><%= @recipe.summary %> </h1>
+      <div class='well'><%= @recipe.description %> </div>
+    </div>
+</div>
+
+<%= link_to "Return to recipe listing",recipes_path,class: "btn btn-warning" %>
