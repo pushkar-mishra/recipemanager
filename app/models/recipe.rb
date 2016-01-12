@@ -6,7 +6,7 @@ class Recipe < ActiveRecord::Base
   validates :description, presence: true, length: {minimum: 50, maximum: 500}
   
   mount_uploader :picture, PictureUploader
-  validate :picture_size
+  #validate :picture_size
   
   private
     def picture_size
