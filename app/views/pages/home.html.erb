@@ -1,23 +1,23 @@
 <div class='center jumbotron'>
   <h1>Welcome to myRecipeManager!</h1>
-  <h3> This is Test container.</h3>
-  <%= link_to'Sign up now!', "", class:"btn btn-lg btn-success"%> 
+  <h3> myRecipe Manager is ONE place to store and organize the recipes you find – in a format that can be carried & used directly in the kitchen.</h3>
+  <%= link_to'Sign up now!', register_path, class:"btn btn-lg btn-success"%> 
 </div>
 
 <div class='row'>
   <div class='col-lg-4'>
     <h3 class='midrow'>Browser recipe as Guest user!</h3>
      <p>Browse recipes as a guest user and sign up latter.</h4>
-     <p class='center'><%= link_to 'Browse Recipes',recipes_path,class:"btn btn-warning btn-samll" %></p>
+     <p><%= link_to 'Browse Recipes',recipes_path,class:"btn btn-warning btn-samll" %></p>
+  </div>
+  <div class='col-lg-4'>
+    <h3 class='midrow'>Sign In to your account!</h3>
+     <p>Add/Update your recipes, like/dislike and many more.</h4>
+     <p><%= link_to 'Login to your account',"",class:"btn btn-warning btn-samll" %></p>
   </div>
   <div class='col-lg-4'>
     <h3 class='midrow'>Browser recipe as Guest user!</h3>
      <p>Browse recipes as a guest user and sign up latter.</h4>
-     <p class='center'><%= link_to 'Browse Recipes',recipes_path,class:"btn btn-warning btn-samll" %></p>
-  </div>
-  <div class='col-lg-4'>
-    <h3 class='midrow'>Browser recipe as Guest user!</h3>
-     <p>Browse recipes as a guest user and sign up latter.</h4>
-     <p class='center'><%= link_to 'Browse Recipes',recipes_path,class:"btn btn-warning btn-samll" %></p>
+     <p><%= link_to 'Browse Recipes',recipes_path,class:"btn btn-warning btn-samll" %></p>
   </div>
 </div>

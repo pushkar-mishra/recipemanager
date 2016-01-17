@@ -1,0 +1,19 @@
+<h1 class='center'>All Chefs.</h1>
+
+<div class='row'>
+  <div class='col-md-4 col-lg-offset-4 center'>
+   <%= will_paginate @recipes %>
+  </div>
+</div
+
+<% @chefs.each do |chef| %>
+<div class='row'>
+    <div class='col-md-4 col-lg-offset-4 center'>
+      <section class='chef_info center'>
+        <%= link_to gravatar_for(chef, size: 100),chef_path(chef) %>
+        <h5>Chef Name: <%= link_to chef.chefname, chef_path(chef) %></h5>
+      </section>
+    </div>
+</div>
+<% end %>
+
