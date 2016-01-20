@@ -9,3 +9,8 @@
   Live demo:
   
   https://mykhanakhajana.herokuapp.com/
+  
+  
+  Code imported from:
+  
+  https://bitbucket.org/pushkar-mishra/myrecipemanager
